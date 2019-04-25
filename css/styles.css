@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+body{
+  background: white;
+}
+.wrapper{
+  width: 90%;
+  margin:0 auto;
+   display: grid; /*makes the grid */
+   grid-template-columns: 1fr 1fr 1fr; /* this divides the page in 3 fractions the fr stands for fractions we use it 1 time so 1/3,1/3,1/3. So if i had 1fr, 3fr,1fr, the middle is 3/5ths of the page because we have a total space of 5 the middle column will be biggest*/
+   /* grid-template-columns: repeat(3,200px); /* this uses to variables on the repeat function, the number of columns we use 3, and the width of the columns we used 200 px */ 
+   /* grid-template-columns: 100px 200px 300px; /* this makes the grid have 3 columns the first being 100px, the second being 200px, and the third being 300px. */
+
+  /* grid-template-rows: 300px; /*this makes the first row of the grid 300 pixels, this only dictates the first row, if i put a comma and another pixel amount it would be the second and so on */
+
+   /* grid-column-gap:20px; /*this creates a gap between the columns 20 px wide.*/
+
+   /* grid-row-gap:20px; /*this creates a gap between are 2 rows we created*/
+
+   grid-gap: 20px;/*this creates a 20 px gap between the rows and the column does the same thing as grid-row-gap, and grid column gap.*/
+/* grid-template-rows: 100px; */
+}
+.item{
+  background: blue;
+  color: white;
+  padding:10px;
+}
+.item:nth-child(even){
+  background: pink;
+}
